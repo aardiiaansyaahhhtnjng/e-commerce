@@ -1,9 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "../PageObjectModel/login.page";
-// import { ProductsPage } from "./PageObjectModel/product.page";
 import { FileterProduct } from "../PageObjectModel/filter.page";
-// import { ProductsPage } from "./PageObjectModel/product.page";
-// import { ProductsPage } from "./PageObjectModel/product.page";
 
 // store credentials in variables
 const link = "https://www.saucedemo.com/";
