@@ -1,14 +1,14 @@
 import { test, expect } from "@playwright/test";
-import { LoginPage } from "./PageObjectModel/login.page";
+import { LoginPage } from "../PageObjectModel/login.page";
 // import { ProductsPage } from "./PageObjectModel/product.page";
-import { FileterProduct } from "./PageObjectModel/filter.page";
+import { FileterProduct } from "../PageObjectModel/filter.page";
 // import { ProductsPage } from "./PageObjectModel/product.page";
 // import { ProductsPage } from "./PageObjectModel/product.page";
 
 // store credentials in variables
-const link = 'https://www.saucedemo.com/';
-const username = 'standard_user';
-const password = 'secret_sauce';
+const link = "https://www.saucedemo.com/";
+const username = "standard_user";
+const password = "secret_sauce";
 
 test.beforeEach(async ({ page }) => {
   const loginPage = new LoginPage(page);
