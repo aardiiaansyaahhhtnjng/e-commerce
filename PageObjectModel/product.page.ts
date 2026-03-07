@@ -1,4 +1,4 @@
-import { Page, expect } from '@playwright/test';
+import { Page } from '@playwright/test';
 
 export class ProductsPage {
   constructor(private page: Page) {}
@@ -35,9 +35,5 @@ export class ProductsPage {
     for (let j = 0; j < this.addToCartBtn.length; j++) {
       await this.page.locator(this.removeBtn[j]).click();
     }
-  }
-
-  async sortBy(value: string) {
-    await this.page.selectOption(this.sortDropdown, value);
   }
 }
